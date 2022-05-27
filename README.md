@@ -1,5 +1,6 @@
 ## 原始模型
 ### 模型简介
+我们选用maskrcnn作为任务框架，swin transformer作为backbone，选用mmdetection代码仓库： [model config](https://gitee.com/open-mmlab/mmdetection/blob/master/configs/swin/mask_rcnn_swin-s-p4-w7_fpn_fp16_ms-crop-3x_coco.py "")
 #### Swin Transformer
 在Swin Transformer出现之前，transformer有两大挑战：1,视觉实体变化da，在不同场景下视觉Transformer性能不够好。2，图像分辨率高，像素点多，Transformer基于全局自注意力的计算导致计算量大。针对以上问题，swin transformer设计了一种包含滑窗操作、具有层级设计的Transformer结构。该结构可以作为通用视觉backbone，灵活应用于目标分类、目标检测、图像分割等任务。
 ![swin-transformer](/imgs/swin-transformer.png "swin-transfomer")
